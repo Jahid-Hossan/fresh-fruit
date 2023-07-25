@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Fruits</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <!-- Tailwind + Daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwind custom style -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'this-clr': '#F85559',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- CSS custom style -->
+    <style>
+        .lato {
+            font-family: 'Lato', sans-serif;
+        }
+
+        .one{
+            background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%), url(./images/banner1.png);
+        }
+        .two{
+            background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%), url(./images/banner2.png);
+        }
+        .three{
+            background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%), url(./images/banner3.png);
+        }
+        .four{
+            background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%), url(./images/banner4.png);
+        }
+
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        /* .banner::after{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);
+        } */
+    </style>
+</head>
+
+<body class="font-lato">
+    <!-- header  -->
+    <header class="container mx-auto">
+
+    </header>
+    <!-- main -->
+    <main class="container mx-auto">
+        <!-- banner -->
+        <section class="flex flex-col  relative items-center">
+            <div class="carousel w-full ">
+                <!-- slider 1 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div class="banner one h-[600px] flex flex-col gap-12 justify-center">
+                        <h2 class="text-7xl font-extrabold text-white text-center ">Exotic tastes at your <br> doorstep
+                        </h2>
+                        <p class="text-xl font-medium text-white text-center">We supply highly quality organic products
+                        </p>
+                        <button
+                            class=" bg-this-clr  mx-auto border-0 px-8 py-5 rounded-lg font-extrabold text-xl text-white">Shop
+                            Now</button>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle bg-transparent text-white text-2xl border-0">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-transparent text-white text-2xl border-0">❯</a>
+                    </div>
+                </div>
+                <!-- slider 2 -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="banner two h-[600px] flex flex-col gap-12 justify-center">
+                        <h2 class="text-7xl font-extrabold text-white text-center ">Exotic tastes at your <br> doorstep
+                        </h2>
+                        <p class="text-xl font-medium text-white text-center">We supply highly quality organic products
+                        </p>
+                        <button
+                            class=" bg-this-clr  mx-auto border-0 px-8 py-5 rounded-lg font-extrabold text-xl text-white">Shop
+                            Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle bg-transparent text-white text-2xl border-0">❮</a>
+                        <a href="#slide3" class="btn btn-circle bg-transparent text-white text-2xl border-0">❯</a>
+                    </div>
+                </div>
+                <!-- slider 3 -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div class="banner three h-[600px] flex flex-col gap-12 justify-center">
+                        <h2 class="text-7xl font-extrabold text-white text-center ">Exotic tastes at your <br> doorstep
+                        </h2>
+                        <p class="text-xl font-medium text-white text-center">We supply highly quality organic products
+                        </p>
+                        <button
+                            class=" bg-this-clr  mx-auto border-0 px-8 py-5 rounded-lg font-extrabold text-xl text-white">Shop
+                            Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle bg-transparent text-white text-2xl border-0">❮</a>
+                        <a href="#slide4" class="btn btn-circle bg-transparent text-white text-2xl border-0">❯</a>
+                    </div>
+                </div>
+                <!-- slider 4 -->
+                <div id="slide4" class="carousel-item relative w-full">
+                    <div class="banner four h-[600px] flex flex-col gap-12 justify-center">
+                        <h2 class="text-7xl font-extrabold text-white text-center ">Exotic tastes at your <br> doorstep
+                        </h2>
+                        <p class="text-xl font-medium text-white text-center">We supply highly quality organic products
+                        </p>
+                        <button
+                            class=" bg-this-clr  mx-auto border-0 px-8 py-5 rounded-lg font-extrabold text-xl text-white">Shop
+                            Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle bg-transparent text-white text-2xl border-0">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-transparent text-white text-2xl border-0">❯</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex invisible md:visible gap-20  bg-white absolute rounded-lg -bottom-36 text-center py-12 px-16 shadow-lg">
+                <div class="text-center space-y-4 text-xl">
+                    <img src="./images/fruit1.png" alt="">
+                    <h4>Grapes</h4>
+                </div>
+                <div class="text-center space-y-4 text-xl ">
+                    <img src="./images/fruit2.png" alt="">
+                    <h4>Mango</h4>
+                </div>
+                <div class="text-center space-y-4 text-xl">
+                    <img src="./images/fruit3.png" alt="">
+                    <h4>Orange</h4>
+                </div>
+                <div class="text-center space-y-4 text-xl">
+                    <img src="./images/fruit4.png" alt="">
+                    <h4>Strawberry</h4>
+                </div>
+                <div class="text-center space-y-4 text-xl">
+                    <img src="./images/fruit5.png" alt="">
+                    <h4>Mango</h4>
+                </div>
+            </div>
+        </section>
+
+        <!--  -->
+
+
+    </main>
+    <!-- footer -->
+    <footer>
+
+
+    </footer>
+
+
+</body>
+
+</html>
