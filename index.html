@@ -25,6 +25,7 @@
                     colors: {
                         clifford: '#da373d',
                         'this-clr': '#F85559',
+
                     }
                 }
             }
@@ -53,20 +54,12 @@
         }
 
         .banner {
-            position: relative;
             width: 100%;
-            height: 100%;
             background-repeat: no-repeat;
             background-size: cover;
+            background-position: center;
 
         }
-
-        /* .banner::after{
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            background-color: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);
-        } */
     </style>
 </head>
 
@@ -79,13 +72,13 @@
     <main class="container mx-auto">
         <!-- banner -->
         <section class="lg:mb-64 flex flex-col  relative items-center">
-            <div class="carousel w-full ">
+            <div class="carousel w-full h-80 lg:h-3/6 ">
                 <!-- slider 1 -->
                 <div id="slide1" class="carousel-item relative w-full">
-                    <div class="banner one h-[600px] flex flex-col gap-12 justify-center">
-                        <h2 class="text-7xl font-extrabold text-white text-center ">Exotic tastes at your <br> doorstep
+                    <div class="banner one flex flex-col space-y-6 lg:space-y-12 justify-center  w-full">
+                        <h2 class="text-2xl lg:text-7xl font-extrabold text-white text-center ">Exotic tastes at your <br> doorstep
                         </h2>
-                        <p class="text-xl font-medium text-white text-center">We supply highly quality organic products
+                        <p class="text-sm md:text-xl font-normal text-white text-center">We supply highly quality organic products
                         </p>
                         <button
                             class=" bg-this-clr  mx-auto border-0 px-8 py-5 rounded-lg font-extrabold text-xl text-white">Shop
@@ -99,10 +92,10 @@
                 </div>
                 <!-- slider 2 -->
                 <div id="slide2" class="carousel-item relative w-full">
-                    <div class="banner two h-[600px] flex flex-col gap-12 justify-center">
-                        <h2 class="text-7xl font-extrabold text-white text-center ">Exotic tastes at your <br> doorstep
+                    <div class="banner two w-full flex flex-col space-y-6 lg:space-y-12  justify-center">
+                        <h2 class="text-2xl lg:text-7xl font-extrabold text-white text-center ">Exotic tastes at your <br> doorstep
                         </h2>
-                        <p class="text-xl font-medium text-white text-center">We supply highly quality organic products
+                        <p class="text-sm md:text-xl font-normal text-white text-center">We supply highly quality organic products
                         </p>
                         <button
                             class=" bg-this-clr  mx-auto border-0 px-8 py-5 rounded-lg font-extrabold text-xl text-white">Shop
@@ -115,10 +108,10 @@
                 </div>
                 <!-- slider 3 -->
                 <div id="slide3" class="carousel-item relative w-full">
-                    <div class="banner three h-[600px] flex flex-col gap-12 justify-center">
-                        <h2 class="text-7xl font-extrabold text-white text-center ">Exotic tastes at your <br> doorstep
+                    <div class="banner three w-full flex flex-col space-y-6 lg:space-y-12  justify-center">
+                        <h2 class="text-2xl lg:text-7xl font-extrabold text-white text-center ">Exotic tastes at your <br> doorstep
                         </h2>
-                        <p class="text-xl font-medium text-white text-center">We supply highly quality organic products
+                        <p class="text-sm md:text-xl font-normal text-white text-center">We supply highly quality organic products
                         </p>
                         <button
                             class=" bg-this-clr  mx-auto border-0 px-8 py-5 rounded-lg font-extrabold text-xl text-white">Shop
@@ -131,10 +124,10 @@
                 </div>
                 <!-- slider 4 -->
                 <div id="slide4" class="carousel-item relative w-full">
-                    <div class="banner four h-[600px] flex flex-col gap-12 justify-center">
-                        <h2 class="text-7xl font-extrabold text-white text-center ">Exotic tastes at your <br> doorstep
+                    <div class="banner four w-full flex flex-col space-y-6 lg:space-y-12  justify-center">
+                        <h2 class="text-2xl lg:text-7xl font-extrabold text-white text-center ">Exotic tastes at your <br> doorstep
                         </h2>
-                        <p class="text-xl font-medium text-white text-center">We supply highly quality organic products
+                        <p class="text-sm md:text-xl font-normal text-white text-center">We supply highly quality organic products
                         </p>
                         <button
                             class=" bg-this-clr  mx-auto border-0 px-8 py-5 rounded-lg font-extrabold text-xl text-white">Shop
@@ -147,7 +140,7 @@
                 </div>
             </div>
             <div
-                class="flex invisible md:visible gap-20  bg-white absolute rounded-lg -bottom-36 text-center py-12 px-16 shadow-lg">
+                class="flex flex-col md:flex-row invisible md:visible gap-20  bg-white absolute rounded-lg -bottom-36 text-center py-12 px-16 shadow-lg">
                 <div class="text-center space-y-4 text-xl">
                     <img src="./images/fruit1.png" alt="">
                     <h4>Grapes</h4>
