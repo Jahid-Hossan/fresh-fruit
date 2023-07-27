@@ -68,7 +68,7 @@
     <!-- header  -->
     <header class="container mx-auto my-7 lg:my-14">
         <nav>
-            <div class="p-2 flex items-center rounded-full lg:bg-this-clr justify-between relative">
+            <div class="p-2 grid grid-cols-1 lg:grid-cols-3 items-center rounded-full lg:bg-this-clr justify-between relative">
                 <div class="grid grid-cols-2 lg:grid-cols-1 items-center ">
                     <div class="dropdown order-last flex w-full justify-end">
                         <label tabindex="0" class="btn btn-ghost  lg:hidden">
@@ -92,7 +92,7 @@
                     </a>
                 </div>
                 <div class="navbar-center hidden order-first lg:flex">
-                    <ul class="menu menu-horizontal px-1  text-white font-medium text-lg">
+                    <ul class="menu menu-horizontal min-w-[400px] px-1  text-white font-medium text-lg">
                         <li><a>Home</a></li>
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
@@ -100,8 +100,8 @@
                     </ul>
                 </div>
                 <div class="flex absolute lg:static hidden lg:block  justify-end bg-white rounded-full">
-                    <a class="">
-                        <input class="px-7 max-w-[400px] rounded-full py-5" placeholder="Search here  " type="search">
+                    <a class="flex items-center">
+                        <input class="px-7 flex-1 rounded-full py-5" placeholder="Search here  " type="search">
                         <i class="fa-solid fa-magnifying-glass px-7"></i>
                     </a>
                 </div>
@@ -189,7 +189,8 @@
                 </div>
             </div>
             <div
-                class="flex flex-col md:flex-row invisible md:visible gap-20  bg-white absolute rounded-lg -bottom-36 text-center py-12 px-16 shadow-lg">
+                class="flex flex-col lg:flex-row invisible lg:visible gap-20  bg-white absolute rounded-lg -bottom-36 text-center py-12 px-16 shadow-lg">
+
                 <div class="text-center space-y-4 text-xl">
                     <img src="./images/fruit1.png" alt="">
                     <h4>Grapes</h4>
